@@ -172,29 +172,6 @@ describe('Central de Atendimento ao Cliente TAT', function () {
             .should('not.be.checked')
     })
 
-    it('marca ambos checkboxes, depois desmarca o último', function () {
-        cy.get('input[type="checkbox"]')
-            .check()
-            .last()
-            .uncheck()
-            .should('not.be.checked')
-    })
-
-    it('marca ambos checkboxes, depois desmarca o último', function () {
-        cy.get('input[type="checkbox"]')
-            .check()
-            .last()
-            .uncheck()
-            .should('not.be.checked')
-    })
-
-    it('marca ambos checkboxes, depois desmarca o último', function () {
-        cy.get('input[type="checkbox"]')
-            .check()
-            .last()
-            .uncheck()
-            .should('not.be.checked')
-    })
 
     it('marca ambos checkboxes, depois desmarca o último', function () {
         cy.get('input[type="file"]').selectFile('C:/Users/Usuario/Desktop/Projetos/CyBasic/cypress-basico-v2/cypress/fixtures/example.json')
@@ -202,15 +179,8 @@ describe('Central de Atendimento ao Cliente TAT', function () {
                 expect($input[0].files[0].name).to.equal('example.json')
 
 
-            })
-            
-        })
- 
-
-    it('marca ambos checkboxes, depois desmarca o último', function () {
-        cy.get('input[type="file"]').selectFile('C:/Users/Usuario/Desktop/Projetos/CyBasic/cypress-basico-v2/cypress/fixtures/example.json')
-            .should(function ($input) {
-            expect($input[0].files[0].name).to.equal('example.json')
+                  
+     
 
 
                 })
@@ -225,15 +195,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
                     })
             })
 
-    it('seleciona um arquivo utilizando uma fixture para a qual foi dada um alias', function () {
-        cy.fixture('example.json', {encoding: null}).as('examplefile')
-        cy.get('input[type="file"')
-            .selectFile('@examplefile')
-            .then(input => {
-              expect(input[0].files[0].name).to.equal('example.json')  
-        })
-            
-    })
+    
             
     it('seleciona um arquivo utilizando uma fixture para a qual foi dada um alias', function () {
         cy.fixture('example.json', {encoding: null}).as('examplefile')
