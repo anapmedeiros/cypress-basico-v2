@@ -7,3 +7,9 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {},
   },
 })
+
+
+
+module.exports = defineConfig({
+  video: true,
+})
